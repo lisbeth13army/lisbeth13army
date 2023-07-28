@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(92, 51, 5, 0.808);
+
+    /* Color de fondo azul */
+}
+
+.cata {
+    font-size: 50px;
+}
+
+.este {
+    font-size: 40px;
+}
+
+.circle {
+    width: 250px;
+
+    /* Tamaño del círculo (ajustar según la imagen) */
+    height: 250px;
+
+    /* Tamaño del círculo (ajustar según la imagen) */
+    background-color: white;
+
+    /* Color de fondo del círculo */
+    border-radius: 50%;
+
+    /* Hace que el div sea un círculo */
+    margin: 20px;
+
+    /* Margen para separar del borde del contenedor */
+}
+
+.foto {
+    text-align: center;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid red;
+}
+
+.content {
+    flex: 1;
+
+    /* El contenido ocupa el espacio restante en el contenedor */
+    padding: 20px;
+
+    /* Espaciado interno para el contenido */
+    color: white;
+
+    /* Color de texto en el contenido */
+}
+
+/* Estilos específicos para el contenido */
+.header {
+    text-align: center;
+
+    /* Centra el texto en el contenedor */
+}
+
+.flex-container {
+    display: flex;
+}
+
+.left,
+.right {
+    flex: 0.3;
+}
+
+.left {
+    background-color: #d7b899;
+
+    /* Color café claro */
+    width: 300px;
+
+    /* Ancho fijo del contenedor left */
+    display: flex;
+    flex-direction: column;
+
+    /* Alinea el contenido a la izquierda */
+    align-items: flex-start;
+
+    /* Alinea los elementos a la izquierda */
+}
+
+.right {
+    background-color: #fff;
+
+    /* Color blanco */
+    display: flex;
+    flex-direction: column;
+
+    /* Alinea el contenido a la izquierda */
+    align-items: flex-start;
+
+    /* Alinea los elementos a la izquierda */
+}
+
+.section {
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+.section blanco {
+    margin: 5px;
+}
+
+.cafe-claro {
+    background-color: #d7b899;
+
+    /* Color café claro */
+}
+
+.blanco {
+    background-color: #fff;
+
+    /* Color blanco */
+}
+
+/* Estilo para el icono de enlace ("<") */
+.bi-chevron-left::before {
+    content: "\f053";
+
+    /* Código de la flecha izquierda en la fuente Bootstrap Icons */
+    font-family: "bootstrap-icons";
+
+    /* Agregar el estilo de la fuente Bootstrap Icons */
+}
+
+/* Estilo para el icono de enlace (">") */
+.bi-chevron-right::before {
+    content: "\f054";
+
+    /* Código de la flecha derecha en la fuente Bootstrap Icons */
+    font-family: "bootstrap-icons";
+
+    /* Agregar el estilo de la fuente Bootstrap Icons */
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
